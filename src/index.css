@@ -3,4 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+  background-color: #001514;
+  color: rgb(247, 244, 244);
+  object-fit: cover;
 }
