@@ -3,19 +3,41 @@
   @include flexColumn();
   align-items: center;
   border-right: 4px solid rgb(247, 244, 244);
-  h1{
+  h1 {
     font-size: 1.9em;
-    font-weight: bo
+    font-weight: bo;
   }
-  h1,h2{
-    padding: .8em 0;
+  h1,
+  h2 {
+    padding: 0.8em 0;
   }
-  
+
   #avatar {
     img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
+    }
+  }
+
+  #nav{
+    border: 2px solid red;
+    @include flexColumn();
+    gap: 4em;
+    a{
+        @include flex();
+        align-items: center;
+        // justify-content: space-between;
+        gap: 2em;
+        border: 2px solid blue;
+        text-decoration: none;
+        span{
+            font-size: 1.4em;
+            font-weight: 550;
+        }
+    }
+    img{
+        width: 30px;
     }
   }
 }
