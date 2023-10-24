@@ -28,7 +28,7 @@ export default function SideBar() {
               <img src="/contact.png" alt="" />
             </NavLink>
           </div>
-          <h3>MES RESEAUX</h3>
+          <h2>MES RESEAUX</h2>
           <div id="reseaux">
             <NavLink to={""}>
               <img src="/linkedin.png" alt="" />
@@ -36,7 +36,7 @@ export default function SideBar() {
             <NavLink to={""}>
               <img src="/git.png" alt="" />
             </NavLink>
-            <NavLink to={""}>
+            <NavLink to={"https://cvbilaly.netlify.app/"}>
               <img src="/cv.png" alt="" />
             </NavLink>
           </div>

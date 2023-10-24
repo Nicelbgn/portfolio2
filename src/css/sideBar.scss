@@ -1,15 +1,19 @@
 #side-bar-container {
   width: 30%;
+  height: 100vh;
   @include flexColumn();
   align-items: center;
   border-right: 4px solid rgb(247, 244, 244);
+
   h1 {
     font-size: 1.9em;
   }
+
   h1,
   h2 {
-    padding: 0.8em 0;
+    padding: 0.5em 0;
   }
+
   #avatar {
     img {
       width: 200px;
@@ -17,33 +21,43 @@
       border-radius: 50%;
     }
   }
-  #side-bar-flex{
-    border: 2px solid;
+
+  #side-bar-flex {
+    // border: 2px solid;
     height: 100%;
+    @include flexColumn();
+    justify-content: space-between;
   }
 
   #nav {
     @include flexColumn();
-    gap: 4em;
+    gap: 2.7em;
+    margin-top: 1.3em;
+
     a {
       @include flex();
       align-items: center;
       gap: 1.7em;
       text-decoration: none;
+
       span {
         font-size: 1.4em;
-        font-weight:normal
+        font-weight: normal
       }
     }
+
     img {
       width: 30px;
     }
   }
-  #reseaux{
+
+  #reseaux {
     @include flex();
     gap: 1em;
-    img{
-        width: 35px;
+    padding-bottom: 0.2em;
+
+    img {
+      width: 35px;
     }
   }
 }
