@@ -8,12 +8,16 @@ export default function SideBar() {
         </div>
         <h1>BILALY CISSOKHO</h1>
         <h2>DEVELOPPEUR WEB</h2>
-        <p>LinkedIn</p>
-        <p>Mon cv</p>
-        <p>A propos</p>
-        <p>Compétences</p>
-        <p>Projets</p>
-        <p>Me contacter</p>
+        <a><img src="/about.png" alt="" />A propos</a>
+        <a><img src="/skills.png" alt="" />Compétences</a>
+        <a><img src="/project.png" alt="" />Projets</a>
+        <a><img src="/contact.png" alt="" />Me contacter</a>
+        <h3>MES RESEAUX</h3>
+        <div>
+          <a><img src="/linkedin.png" alt="" /></a>
+          <a><img src="/git.png" alt="" /></a>
+          <a><img src="/cv.png" alt="" /></a>
+        </div>
       </div>
     </section>
   );

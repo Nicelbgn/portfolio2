@@ -1,9 +1,21 @@
 #side-bar-container {
-    #avatar {
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
+  width: 30%;
+  @include flexColumn();
+  align-items: center;
+  border-right: 4px solid rgb(247, 244, 244);
+  h1{
+    font-size: 1.9em;
+    font-weight: bo
+  }
+  h1,h2{
+    padding: .8em 0;
+  }
+  
+  #avatar {
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
     }
+  }
 }
