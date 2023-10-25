@@ -2,13 +2,13 @@
   padding-top: 1.5em;
   height: 100vh;
   @include flexColumn();
-  align-items: center;
+  @include alignCenter();
   border-right: 4px solid rgb(247, 244, 244);
 
   h1 {
     font-size: 2em;
   }
-  h2{
+  h2 {
     text-align: center;
   }
 
@@ -19,8 +19,8 @@
 
   #avatar {
     img {
-      width:180px;
-      height:180px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
     }
   }
@@ -38,7 +38,7 @@
 
     a {
       @include flex();
-      align-items: center;
+      @include alignCenter();
       gap: 1.7em;
       text-decoration: none;
 
@@ -54,9 +54,8 @@
   }
 
   #reseaux {
-    h3{
+    h3 {
       margin-bottom: 2em;
-      text-decoration: underline;
     }
     padding-bottom: 1em;
     #reseaux-items {

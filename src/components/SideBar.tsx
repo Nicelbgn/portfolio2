@@ -29,19 +29,22 @@ export default function SideBar() {
             </NavLink>
           </div>
           <div id="reseaux">
-          <h3>MES RESEAUX :</h3>
-          <div id="reseaux-items">
-          <NavLink to={"https://www.linkedin.com/in/bilaly-cissokho-473400278?originalSubdomain=fr"}>
-              <img src="/linkedin.png" alt="" />
-            </NavLink>
-            <NavLink to={"https://github.com/GalsenBoy?tab=repositories"}>
-              <img src="/git.png" alt="" />
-            </NavLink>
-            <NavLink to={"https://cvbilaly.netlify.app/"}>
-              <img src="/cv.png" alt="" />
-            </NavLink>
-          </div>
-           
+            <h3>MES RESEAUX :</h3>
+            <div id="reseaux-items">
+              <NavLink
+                to={
+                  "https://www.linkedin.com/in/bilaly-cissokho-473400278?originalSubdomain=fr"
+                }
+              >
+                <img src="/linkedin.png" alt="" />
+              </NavLink>
+              <NavLink to={"https://github.com/GalsenBoy?tab=repositories"}>
+                <img src="/git.png" alt="" />
+              </NavLink>
+              <NavLink to={"https://cvbilaly.netlify.app/"}>
+                <img src="/cv.png" alt="" />
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>

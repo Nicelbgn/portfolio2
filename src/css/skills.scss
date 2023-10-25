@@ -1,0 +1,23 @@
+#skills-card {
+  @include flex();
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.2em;
+  #skills-card-display {
+    border: 3px solid rgb(247, 244, 244);
+    border-radius: 12px;
+    width: 200px;
+    height: 150px;
+    @include flexColumn();
+    @include alignCenter();
+    justify-content: space-around;
+    h4 {
+      font-size: larger;
+    }
+    img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
