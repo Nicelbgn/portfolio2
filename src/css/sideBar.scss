@@ -1,12 +1,16 @@
 #side-bar-container {
-  width: 30%;
+  position: fixed;
+  padding-top: 1.5em;
   height: 100vh;
   @include flexColumn();
-  align-items: center;
+  @include alignCenter();
   border-right: 4px solid rgb(247, 244, 244);
 
   h1 {
-    font-size: 1.9em;
+    font-size: 2em;
+  }
+  h2 {
+    text-align: center;
   }
 
   h1,
@@ -16,14 +20,13 @@
 
   #avatar {
     img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
     }
   }
 
   #side-bar-flex {
-    // border: 2px solid;
     height: 100%;
     @include flexColumn();
     justify-content: space-between;
@@ -31,18 +34,18 @@
 
   #nav {
     @include flexColumn();
-    gap: 2.7em;
+    gap: 2.8em;
     margin-top: 1.3em;
 
     a {
       @include flex();
-      align-items: center;
+      @include alignCenter();
       gap: 1.7em;
       text-decoration: none;
 
       span {
         font-size: 1.4em;
-        font-weight: normal
+        font-weight: normal;
       }
     }
 
@@ -52,10 +55,14 @@
   }
 
   #reseaux {
-    @include flex();
-    gap: 1em;
-    padding-bottom: 0.2em;
-
+    h3 {
+      margin-bottom: 2em;
+    }
+    padding-bottom: 1em;
+    #reseaux-items {
+      @include flex();
+      gap: 1.2em;
+    }
     img {
       width: 35px;
     }

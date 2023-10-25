@@ -1,0 +1,30 @@
+#projet-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+  }
+  
+  .project {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1em;
+    width: 300px;
+    margin: 0.5em;
+    text-align: center;
+    transition: transform 0.3s;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    h4 {
+      color: #001514;
+      margin-top: 0.5em;
+    }
+  }
+  

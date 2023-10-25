@@ -6,5 +6,32 @@
   background-color: #001514;
   color: rgb(247, 244, 244);
   object-fit: cover;
+  
+}
+#home-content{
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 500px 1fr;
 }
 
+h3{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #001514;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 244, 244);
+  border-radius: 20px;
+  border: 2px solid #001514;
+}
+
+
+/*Font Nocifer */
