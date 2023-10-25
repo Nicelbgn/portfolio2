@@ -1,5 +1,5 @@
 #side-bar-container {
-  width: 30%;
+  padding-top: 1.5em;
   height: 100vh;
   @include flexColumn();
   align-items: center;
@@ -19,8 +19,8 @@
 
   #avatar {
     img {
-      width: 200px;
-      height: 200px;
+      width:180px;
+      height:180px;
       border-radius: 50%;
     }
   }
