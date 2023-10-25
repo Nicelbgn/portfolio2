@@ -3,11 +3,19 @@
   width: 80%;
   margin: 0 auto;
   height: 100vh;
-  overflow: auto;
+  // overflow: auto;
   #about {
     p {
       padding: 0.5em 0 0 0.5em;
       font-size: larger;
     }
+  }
+  #skills{
+  #front{
+    h3{
+      text-align: center;
+      margin: 2em 0;
+    }
+  }
   }
 }

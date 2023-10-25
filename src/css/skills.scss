@@ -1,7 +1,7 @@
 #skills-card {
   @include flex();
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1.2em;
   #skills-card-display {
     border: 3px solid rgb(247, 244, 244);

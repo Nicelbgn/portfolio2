@@ -1,4 +1,6 @@
 import "../css/content.scss";
+import Projets from "./Projets";
+import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
 export default function Content() {
   return (
@@ -19,10 +21,18 @@ export default function Content() {
         </div>
         <div id="skills">
           <h3>MES COMPETENCES :</h3>
-          <div>
-            <h4>FRONT-END</h4>
+          <div id="front">
+            <h3>FRONT-END :</h3>
             <SkillsFront />
           </div>
+          <div id="front">
+            <h3>BACK-END :</h3>
+            <SkillsBack />
+          </div>
+        </div>
+        <div>
+         <h3> MES PROJETS :</h3>
+         <Projets />
         </div>
       </div>
     </section>
