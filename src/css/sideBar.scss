@@ -1,5 +1,6 @@
 #side-bar-container {
   position: fixed;
+  width: 500px;
   padding-top: 1.5em;
   height: 100vh;
   @include flexColumn();
