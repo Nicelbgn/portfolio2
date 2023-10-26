@@ -7,7 +7,6 @@ export default function Contact() {
   const inputFields = [
     { type: "text", placeholder: "Votre nom complet", _class: "input-normal" , Name:"user_name" },
     { type: "text", placeholder: "Votre adresse email", _class: "input-normal",Name:"user_email" },
-    { type: "text", placeholder: "Votre message", _class: "input-normal",Name:"message" },
   ];
 
   const form = useRef<HTMLFormElement>(null);
@@ -37,6 +36,7 @@ export default function Contact() {
               Name={inputField.Name}
             />
           ))}
+          <textarea placeholder="Ecrivez votre message" name="message" cols={42} rows={10}></textarea>
           <button>ENVOYER</button>
         </div>
       </form>
