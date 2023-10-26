@@ -31,11 +31,11 @@ export default function Content() {
             <SkillsBack />
           </div>
         </div>
-        <div>
+        <div id="my-projects">
          <h3> MES PROJETS :</h3>
          <Projets />
         </div>
-        <div>
+        <div id="contact">
           <h3>ME CONTACTER</h3>
           <Contact />
         </div>

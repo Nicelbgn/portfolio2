@@ -19,7 +19,7 @@ export default function Contact() {
               _class={inputField._class}
             />
           ))}
-          <textarea name="" id="" cols={43} rows={10} placeholder="Ecrivez votre message"></textarea>
+          <textarea name="" id="" cols={54} rows={10} placeholder="Ecrivez votre message"></textarea>
           <button>ENVOYER</button>
         </div>
       </form>
