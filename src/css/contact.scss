@@ -2,20 +2,13 @@
   @include flexColumn();
   gap: 2em;
 
-  button,
-  textarea {
+  button {
     margin: 0 auto;
     border: 3px solid rgb(247, 244, 244);
     border-radius: 12px;
-    font-size: large;
-  }
-  button {
     padding: 1em 2em;
     cursor: pointer;
-  }
-  textarea {
-    padding: .5em;
-    resize: none;
+    font-size: large;
   }
   ::placeholder{
     color: rgb(247, 244, 244);
