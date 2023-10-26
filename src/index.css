@@ -12,7 +12,6 @@ a{
   text-decoration: none;
 }
 #home-content{
-  /* position: relative; */
   display: grid;
   grid-template-columns: 500px 1fr;
 }
@@ -22,16 +21,15 @@ h3{
   text-underline-offset: 5px;
 }
 
-.input-normal,.input-area{
+.input-normal{
   border: 3px solid rgb(247, 244, 244);
   border-radius: 12px;
   padding: 1em;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
+  font-size: large;
 }
-.input-area{
-  height: 150px;
-}
+
 
 body::-webkit-scrollbar {
   width: 10px;

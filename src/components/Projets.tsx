@@ -7,6 +7,7 @@ export default function Projets() {
     { name: "/clone_spotify.png", valeur: "CLONE SPOTIFY",to:"https://github.com/GalsenBoy/clone-spotify_react_ts" },
     { name: "/retrogems.png", valeur: "SITE RETROGEMS",to:"https://retrogems.fr/"  },
     { name: "/waounde.png", valeur: "ASSOCIATION COMMUNE DE WAOUNDE",to:"https://galsenboy.netlify.app"  },
+    { name: "/github.png", valeur: "VOIR AUSSI SUR GITHUB",to:"https://github.com/GalsenBoy?tab=repositories"  },
   ];
 
   return (
