@@ -1,23 +1,11 @@
 #side-bar-container {
   position: fixed;
   width: 500px;
-  padding-top: 1.5em;
   height: 100vh;
   @include flexColumn();
   @include alignCenter();
+  justify-content: space-around;
   border-right: 4px solid rgb(247, 244, 244);
-
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    text-align: center;
-  }
-
-  h1,
-  h2 {
-    padding: 0.5em 0;
-  }
 
   #avatar {
     img {
@@ -26,13 +14,6 @@
       border-radius: 50%;
     }
   }
-
-  #side-bar-flex {
-    height: 100%;
-    @include flexColumn();
-    justify-content: space-between;
-  }
-
   #nav {
     @include flexColumn();
     gap: 2.8em;
@@ -41,15 +22,13 @@
     a {
       @include flex();
       @include alignCenter();
-      gap: 1.7em;
+      gap: 1.2em;
       text-decoration: none;
 
       span {
         font-size: 1.4em;
-        font-weight: normal;
       }
     }
-
     img {
       width: 30px;
     }

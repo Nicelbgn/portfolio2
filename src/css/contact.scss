@@ -1,0 +1,17 @@
+#form-container {
+  @include flexColumn();
+  gap: 2em;
+
+  button {
+    margin: 0 auto;
+    border: 3px solid rgb(247, 244, 244);
+    border-radius: 12px;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: large;
+  }
+  ::placeholder{
+    color: rgb(247, 244, 244);
+    opacity: .8;
+  }
+}

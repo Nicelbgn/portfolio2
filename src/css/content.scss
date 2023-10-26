@@ -1,21 +1,32 @@
 #content {
-  padding-top: 1.5em;
+  padding-top: 5.4em;
   width: 80%;
   margin: 0 auto;
-  height: 100vh;
-  // overflow: auto;
   #about {
+    margin-bottom: 5em;
     p {
       padding: 0.5em 0 0 0.5em;
       font-size: larger;
     }
   }
   #skills{
+    margin-bottom: 6em;
   #front{
     h3{
       text-align: center;
-      margin: 2em 0;
+      margin: 3em 0;
     }
   }
+  }
+  #my-projects{
+    margin-bottom: 6em;
+    h3{
+      margin: 3em 0;
+    }
+  }
+  #contact{
+    h3{
+      margin: 4em 0;
+    }
   }
 }
