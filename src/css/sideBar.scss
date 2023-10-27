@@ -22,8 +22,20 @@
     a {
       @include flex();
       @include alignCenter();
+      position: relative;
       gap: 1.2em;
-      text-decoration: none;
+      &::after {
+        content: "";
+        width: 0;
+        position: absolute;
+        bottom: -5px;
+        transition: all 0.2s ease-in;
+      }
+      &:hover::after {
+        width: 100%;
+        border: 3px solid rgb(247, 244, 244);
+        transition: width 0.2s ease-in;
+      }
 
       span {
         font-size: 1.4em;
