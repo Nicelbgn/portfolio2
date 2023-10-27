@@ -5,7 +5,7 @@
   @include flexColumn();
   @include alignCenter();
   justify-content: space-around;
-  border-right: 4px solid rgb(247, 244, 244);
+  border-right: 4px solid;
 
   #avatar {
     img {
@@ -33,7 +33,7 @@
       }
       &:hover::after {
         width: 100%;
-        border: 3px solid rgb(247, 244, 244);
+        border: 3px solid ;
         transition: width 0.2s ease-in;
       }
 
