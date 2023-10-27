@@ -22,7 +22,7 @@ h3{
 }
 
 .input-normal{
-  border: 3px solid rgb(247, 244, 244);
+  border: 3px solid ;
   border-radius: 12px;
   padding: 1em;
   width: 40%;
@@ -30,6 +30,14 @@ h3{
   font-size: large;
 }
 
+footer{
+  border-top: 3px solid ;
+}
+footer h2{
+  margin: 2em 0;
+  text-align: center;
+  word-spacing: 2px;
+}
 
 body::-webkit-scrollbar {
   width: 10px;

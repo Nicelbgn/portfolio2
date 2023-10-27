@@ -3,11 +3,36 @@ import "../css/projets.scss";
 
 export default function Projets() {
   const projects = [
-    { name: "/capcv.png", valeur: "CURRICULUM VITAE",to:"https://cvbilaly.netlify.app/" },
-    { name: "/clone_spotify.png", valeur: "CLONE SPOTIFY",to:"https://github.com/GalsenBoy/clone-spotify_react_ts" },
-    { name: "/retrogems.png", valeur: "SITE RETROGEMS",to:"https://retrogems.fr/"  },
-    { name: "/waounde.png", valeur: "ASSOCIATION COMMUNE DE WAOUNDE",to:"https://galsenboy.netlify.app"  },
-    { name: "/github.png", valeur: "VOIR D'AUTRES PROJECTS",to:"https://github.com/GalsenBoy?tab=repositories"  },
+    {
+      id: 1,
+      name: "/capcv.png",
+      valeur: "CURRICULUM VITAE",
+      to: "https://cvbilaly.netlify.app/",
+    },
+    {
+      id: 2,
+      name: "/clone_spotify.png",
+      valeur: "CLONE SPOTIFY",
+      to: "https://github.com/GalsenBoy/clone-spotify_react_ts",
+    },
+    {
+      id: 3,
+      name: "/retrogems.png",
+      valeur: "SITE RETROGEMS",
+      to: "https://retrogems.fr/",
+    },
+    {
+      id: 4,
+      name: "/waounde.png",
+      valeur: "ASSOCIATION COMMUNE DE WAOUNDE",
+      to: "https://galsenboy.netlify.app",
+    },
+    {
+      id: 5,
+      name: "/github.png",
+      valeur: "VOIR D'AUTRES PROJECTS",
+      to: "https://github.com/GalsenBoy?tab=repositories",
+    },
   ];
 
   return (

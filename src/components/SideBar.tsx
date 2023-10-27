@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../css/sideBar.scss";
 export default function SideBar() {
+  const navs = [
+    { img: "/about.png", text: "A propos" },
+    { img: "/skills.png", text: "Compétences" },
+    { img: "/project.png", text: "Projets" },
+    { img: "/contact.png", text: "Me contacter" },
+  ];
   return (
     <section>
       <div id="side-bar-container">
@@ -8,20 +14,11 @@ export default function SideBar() {
           <img src="/avatar.jpg" alt="" />
         </div>
         <div id="nav">
-          <NavLink to={"about"}>
-            <span>A propos</span> <img src="/about.png" alt="" />
-          </NavLink>
-          <NavLink to={""}>
-            <span>Compétences</span> <img src="/skills.png" alt="" />
-          </NavLink>
-          <NavLink to={""}>
-            <span>Projets</span>
-            <img src="/project.png" alt="" />
-          </NavLink>
-          <NavLink to={""}>
-            <span> Me contacter</span>
-            <img src="/contact.png" alt="" />
-          </NavLink>
+          {navs.map((nav) => (
+            <NavLink to={nav.text}>
+              <span>{nav.text}</span> <img src={nav.img} alt={nav.text} />
+            </NavLink>
+          ))}
         </div>
         <div id="reseaux">
           <h3>MES RESEAUX :</h3>

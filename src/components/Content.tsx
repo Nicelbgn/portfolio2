@@ -1,5 +1,6 @@
 import "../css/content.scss";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import Projets from "./Projets";
 import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
@@ -38,6 +39,9 @@ export default function Content() {
         <div id="contact">
           <h3>ME CONTACTER :</h3>
           <Contact />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </section>
