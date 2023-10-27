@@ -36,7 +36,7 @@ export default function Content() {
          <Projets />
         </div>
         <div id="contact">
-          <h3>ME CONTACTER</h3>
+          <h3>ME CONTACTER :</h3>
           <Contact />
         </div>
       </div>
