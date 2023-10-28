@@ -4,11 +4,12 @@ import Footer from "./Footer";
 import Projets from "./Projets";
 import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
+import { motion } from "framer-motion";
 export default function Content() {
   return (
     <section>
       <div id="content">
-        <div id="about">
+        <motion.div id="about">
           <h3>A PROPOS DE MOI :</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis
@@ -20,7 +21,7 @@ export default function Content() {
             leo. Praesent consectetur, justo at pharetra tempus, neque metus
             pharetra est, in vulputate tellus neque at ex.
           </p>
-        </div>
+        </motion.div>
         <div id="skills">
           <h3>MES COMPETENCES :</h3>
           <div id="front">
@@ -33,8 +34,8 @@ export default function Content() {
           </div>
         </div>
         <div id="my-projects">
-         <h3> MES PROJETS :</h3>
-         <Projets />
+          <h3> MES PROJETS :</h3>
+          <Projets />
         </div>
         <div id="contact">
           <h3>ME CONTACTER :</h3>
