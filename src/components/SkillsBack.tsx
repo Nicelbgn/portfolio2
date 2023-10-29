@@ -1,5 +1,9 @@
 import "../css/skills.scss";
-export default function SkillsBack(){
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { animateSkills } from "../utils/animateSkills";
+
+export default function SkillsBack() {
   const backs = [
     {
       img: "/node.png",
@@ -13,7 +17,6 @@ export default function SkillsBack(){
       img: "/prisma.png",
       valeur: "Prisma ORM",
     },
-
     {
       img: "/sql.png",
       valeur: "Sql",
@@ -24,15 +27,41 @@ export default function SkillsBack(){
     },
   ];
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
-    <div id="skills-card">
-      {backs.map((back) => (
-        <div id="skills-card-display">
+    <motion.div
+      className="container"
+      variants={container}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      id="skills-card"
+      ref={ref}
+    >
+      {backs.map((back, index) => (
+        <motion.div
+          className="item"
+          variants={animateSkills()}
+          id="skills-card-display"
+          key={index}
+        >
           <img src={back.img} alt="" />
           <h4>{back.valeur}</h4>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
-                    

@@ -1,4 +1,6 @@
 import "../css/skills.scss";
+import { motion } from "framer-motion";
+import { animateSkills } from "../utils/animateSkills";
 export default function SkillsFront() {
   const fronts = [
     {
@@ -28,14 +30,36 @@ export default function SkillsFront() {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.9,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
-    <div id="skills-card">
+    <motion.div
+      className="container"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      id="skills-card"
+    >
       {fronts.map((front) => (
-        <div id="skills-card-display">
+        <motion.div
+          className="item"
+          variants={animateSkills()}
+          id="skills-card-display"
+        >
           <img src={front.img} alt="" />
           <h4>{front.valeur}</h4>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }

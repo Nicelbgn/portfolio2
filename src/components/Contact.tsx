@@ -1,12 +1,23 @@
 import Input from "./Input";
-import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import "../css/contact.scss";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const inputFields = [
-    { type: "text", placeholder: "Votre nom complet", _class: "input-normal" , Name:"user_name" },
-    { type: "text", placeholder: "Votre adresse email", _class: "input-normal",Name:"user_email" },
+    {
+      type: "text",
+      placeholder: "Votre nom complet",
+      _class: "input-normal",
+      Name: "user_name",
+    },
+    {
+      type: "text",
+      placeholder: "Votre adresse email",
+      _class: "input-normal",
+      Name: "user_email",
+    },
   ];
 
   const form = useRef<HTMLFormElement>(null);
@@ -14,18 +25,27 @@ export default function Contact() {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (form.current) {
-      emailjs.sendForm('service_1644vii', 'template_u4zjhzt', form.current, '71XK9UUr5ic8Ff-H9')
-        .then((result) => {
+      emailjs
+        .sendForm(
+          "service_1644vii",
+          "template_u4zjhzt",
+          form.current,
+          "71XK9UUr5ic8Ff-H9"
+        )
+        .then(
+          (result) => {
             console.log(result.text);
-        }, (error) => {
+          },
+          (error) => {
             console.log(error.text);
-        });
+          }
+        );
     }
-  };  
+  };
 
   return (
     <section>
-      <form  ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail}>
         <div id="form-container">
           {inputFields.map((inputField, index) => (
             <Input
@@ -36,8 +56,15 @@ export default function Contact() {
               Name={inputField.Name}
             />
           ))}
-          <textarea placeholder="Ecrivez votre message" name="message" cols={42} rows={10}></textarea>
-          <button>ENVOYER</button>
+          <textarea
+            placeholder="Ecrivez votre message"
+            name="message"
+            cols={42}
+            rows={10}
+          ></textarea>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            ENVOYER
+          </motion.button>
         </div>
       </form>
     </section>

@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "../css/sideBar.scss";
+import { motion } from "framer-motion";
+import { generateAnimation } from "../utils/animations";
 export default function SideBar() {
   const navs = [
     { img: "/about.png", text: "A propos" },
@@ -7,20 +9,49 @@ export default function SideBar() {
     { img: "/project.png", text: "Projets" },
     { img: "/contact.png", text: "Me contacter" },
   ];
+
+  const animeAvatar = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 1.4,
+        type: "spring",
+      },
+    },
+  };
+
+  const animeNav = generateAnimation(0.5, "x");
+  const animeIcon = generateAnimation(1, "x");
   return (
     <section>
       <div id="side-bar-container">
-        <div id="avatar">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={animeAvatar}
+          id="avatar"
+        >
           <img src="/avatar.jpg" alt="" />
-        </div>
-        <div id="nav">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={animeNav}
+          id="nav"
+        >
           {navs.map((nav) => (
             <NavLink to={nav.text}>
               <span>{nav.text}</span> <img src={nav.img} alt={nav.text} />
             </NavLink>
           ))}
-        </div>
-        <div id="reseaux">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={animeIcon}
+          id="reseaux"
+        >
           <h3>MES RESEAUX :</h3>
           <div id="reseaux-items">
             <NavLink
@@ -37,7 +68,7 @@ export default function SideBar() {
               <img src="/cv.png" alt="" />
             </NavLink>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

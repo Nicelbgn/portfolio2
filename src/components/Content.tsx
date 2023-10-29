@@ -1,14 +1,23 @@
 import "../css/content.scss";
+import { generateAnimation } from "../utils/animations";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Projets from "./Projets";
 import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
+import { motion } from "framer-motion";
 export default function Content() {
+  const animeAbout = generateAnimation(0.3, "y");
+
   return (
     <section>
       <div id="content">
-        <div id="about">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={animeAbout}
+          id="about"
+        >
           <h3>A PROPOS DE MOI :</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis
@@ -20,7 +29,7 @@ export default function Content() {
             leo. Praesent consectetur, justo at pharetra tempus, neque metus
             pharetra est, in vulputate tellus neque at ex.
           </p>
-        </div>
+        </motion.div>
         <div id="skills">
           <h3>MES COMPETENCES :</h3>
           <div id="front">
@@ -33,8 +42,8 @@ export default function Content() {
           </div>
         </div>
         <div id="my-projects">
-         <h3> MES PROJETS :</h3>
-         <Projets />
+          <h3> MES PROJETS :</h3>
+          <Projets />
         </div>
         <div id="contact">
           <h3>ME CONTACTER :</h3>
