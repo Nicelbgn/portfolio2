@@ -1,6 +1,7 @@
 import "../css/skills.scss";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { animateSkills } from "../utils/animateSkills";
 
 export default function SkillsBack() {
   const backs = [
@@ -41,14 +42,6 @@ export default function SkillsBack() {
     },
   };
 
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
-
   return (
     <motion.div
       className="container"
@@ -61,7 +54,7 @@ export default function SkillsBack() {
       {backs.map((back, index) => (
         <motion.div
           className="item"
-          variants={item}
+          variants={animateSkills()}
           id="skills-card-display"
           key={index}
         >
