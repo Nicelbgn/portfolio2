@@ -57,7 +57,7 @@ export default function SkillsFront() {
           id="skills-card-display"
         >
           <img src={front.img} alt="" />
-          <h4>{front.valeur}</h4>
+          <p>{front.valeur}</p>
         </motion.div>
       ))}
     </motion.div>

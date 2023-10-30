@@ -1,31 +1,30 @@
 #projet-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2em;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  justify-content: center;
+}
+
+.project {
+  border: 3px solid;
+  border-radius: 12px;
+  width: 300px;
+  margin: 0.5em;
+  text-align: center;
+  transition: transform 0.3s;
+  padding-bottom: .8em;
+
+  &:hover {
+    transform: scale(1.05);
   }
-  
-  .project {
-    border: 3px solid ;
-    border-radius: 12px;
-    width: 300px;
-    margin: 0.5em;
-    text-align: center;
-    transition: transform 0.3s;
-    padding-bottom: .8em;
-  
-    &:hover {
-      transform: scale(1.05);
-    }
-  
-    img {
-      width: 100%;
-      max-height: 235px;
-      border-radius: 10px;
-    }
-  
-    h4 {
-      margin-top: 0.5em;
-    }
+
+  img {
+    width: 100%;
+    max-height: 235px;
+    border-radius: 10px;
   }
-  
+
+  h4 {
+    margin-top: 0.5em;
+  }
+}
