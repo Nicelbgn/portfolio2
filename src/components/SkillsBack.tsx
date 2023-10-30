@@ -59,7 +59,7 @@ export default function SkillsBack() {
           key={index}
         >
           <img src={back.img} alt="" />
-          <h4>{back.valeur}</h4>
+          <p>{back.valeur}</p>
         </motion.div>
       ))}
     </motion.div>

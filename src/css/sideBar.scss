@@ -14,6 +14,7 @@
       border-radius: 50%;
     }
   }
+
   #nav {
     @include flexColumn();
     gap: 2.8em;
@@ -24,6 +25,7 @@
       @include alignCenter();
       position: relative;
       gap: 1.2em;
+
       &::after {
         content: "";
         width: 0;
@@ -31,9 +33,10 @@
         bottom: -5px;
         transition: all 0.2s ease-in;
       }
+
       &:hover::after {
         width: 100%;
-        border: 3px solid ;
+        border: 2px solid;
         transition: width 0.2s ease-in;
       }
 
@@ -41,6 +44,7 @@
         font-size: 1.4em;
       }
     }
+
     img {
       width: 30px;
     }
@@ -50,11 +54,14 @@
     h3 {
       margin-bottom: 2em;
     }
+
     padding-bottom: 1em;
+
     #reseaux-items {
       @include flex();
       gap: 1.2em;
     }
+
     img {
       width: 35px;
     }

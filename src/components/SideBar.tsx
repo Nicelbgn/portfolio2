@@ -21,8 +21,6 @@ export default function SideBar() {
     },
   };
 
-  const animeNav = generateAnimation(0.5, "x");
-  const animeIcon = generateAnimation(1, "x");
   return (
     <section>
       <div id="side-bar-container">
@@ -37,7 +35,7 @@ export default function SideBar() {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={animeNav}
+          variants={generateAnimation(0.5, "x")}
           id="nav"
         >
           {navs.map((nav) => (
@@ -49,7 +47,7 @@ export default function SideBar() {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={animeIcon}
+          variants={generateAnimation(1, "x")}
           id="reseaux"
         >
           <h3>MES RESEAUX :</h3>

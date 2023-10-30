@@ -7,15 +7,23 @@ import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
 import { motion } from "framer-motion";
 export default function Content() {
-  const animeAbout = generateAnimation(0.3, "y");
-
+  const anime = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.4,
+        type: "spring",
+      },
+    },
+  };
   return (
     <section>
       <div id="content">
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={animeAbout}
+          variants={generateAnimation(0.3, "y")}
           id="about"
         >
           <h3>A PROPOS DE MOI :</h3>
@@ -31,9 +39,13 @@ export default function Content() {
           </p>
         </motion.div>
         <div id="skills">
-          <h3>MES COMPETENCES :</h3>
+          <motion.h3 initial="hidden" animate="visible" variants={anime}>
+            MES COMPETENCES :
+          </motion.h3>
           <div id="front">
-            <h3>FRONT-END :</h3>
+            <motion.h3 initial="hidden" animate="visible" variants={anime}>
+              FRONT-END :
+            </motion.h3>
             <SkillsFront />
           </div>
           <div id="front">
