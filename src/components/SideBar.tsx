@@ -6,7 +6,7 @@ export default function SideBar() {
   const navs = [
     { img: "/about.png", text: "A propos" },
     { img: "/skills.png", text: "Compétences" },
-    { img: "/project.png", text: "Projets" },
+    { img: "/projects.png", text: "Projets" },
     { img: "/contact.png", text: "Me contacter" },
   ];
 
