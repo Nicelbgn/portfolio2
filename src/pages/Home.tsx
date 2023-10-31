@@ -9,15 +9,17 @@ export default function Home() {
     setIsDarkMode(!isDarkMode);
   };
 
-  
-
-
   return (
     <section>
-        <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
-      <div className={isDarkMode ? "dark-mode" : "light-mode"} id="home-content">
+      <div
+        className={isDarkMode ? "dark-mode" : "light-mode"}
+        id="home-content"
+      >
         <SideBar />
-        <Content />
+        <div>
+        <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
+          <Content />
+        </div>
       </div>
     </section>
   );
