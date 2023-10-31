@@ -10,6 +10,21 @@ export default function SideBar() {
     { img: "/contact.png", text: "Me contacter" },
   ];
 
+  const icons = [
+    {
+      to: " https://www.linkedin.com/in/bilaly-cissokho-473400278?originalSubdomain=fr",
+      src: "/linkedin.png",
+    },
+    {
+      to: " https://github.com/GalsenBoy?tab=repositories",
+      src: "/git.png",
+    },
+    {
+      to: "https://cvbilaly.netlify.app/",
+      src: "/cv.png",
+    },
+  ];
+
   const animeAvatar = {
     hidden: { opacity: 0 },
     visible: {
@@ -40,7 +55,7 @@ export default function SideBar() {
         >
           {navs.map((nav) => (
             <NavLink to={nav.text}>
-              <p>{nav.text}</p> <img src={nav.img} alt={nav.text} />
+              <span>{nav.text}</span> <img src={nav.img} alt={nav.text} />
             </NavLink>
           ))}
         </motion.div>
@@ -52,19 +67,11 @@ export default function SideBar() {
         >
           <h3>MES RESEAUX :</h3>
           <div id="reseaux-items">
-            <NavLink
-              to={
-                "https://www.linkedin.com/in/bilaly-cissokho-473400278?originalSubdomain=fr"
-              }
-            >
-              <img src="/linkedin.png" alt="" />
-            </NavLink>
-            <NavLink to={"https://github.com/GalsenBoy?tab=repositories"}>
-              <img src="/git.png" alt="" />
-            </NavLink>
-            <NavLink to={"https://cvbilaly.netlify.app/"}>
-              <img src="/cv.png" alt="" />
-            </NavLink>
+            {icons.map((icon) => (
+              <NavLink to={icon.to}>
+                <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} src={icon.src} alt="" />
+              </NavLink>
+            ))}
           </div>
         </motion.div>
       </div>
