@@ -40,7 +40,7 @@ export default function SideBar() {
         >
           {navs.map((nav) => (
             <NavLink to={nav.text}>
-              <span>{nav.text}</span> <img src={nav.img} alt={nav.text} />
+              <p>{nav.text}</p> <img src={nav.img} alt={nav.text} />
             </NavLink>
           ))}
         </motion.div>

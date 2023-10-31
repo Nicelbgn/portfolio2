@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   gap: 1.2em;
   justify-content: center;
+  a{
+    text-decoration: none;
+    color: rgb(247, 244, 244);
+  }
 }
 
 .project {
