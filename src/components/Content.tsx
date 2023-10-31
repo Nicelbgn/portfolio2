@@ -43,13 +43,13 @@ export default function Content() {
             MES COMPETENCES :
           </motion.h3>
           <div id="front">
-            <motion.h3 initial="hidden" animate="visible" variants={anime}>
+            <motion.h4 initial="hidden" animate="visible" variants={anime}>
               FRONT-END :
-            </motion.h3>
+            </motion.h4>
             <SkillsFront />
           </div>
           <div id="front">
-            <h3>BACK-END :</h3>
+            <h4>BACK-END :</h4>
             <SkillsBack />
           </div>
         </div>
