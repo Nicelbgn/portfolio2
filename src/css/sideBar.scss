@@ -19,12 +19,15 @@
     @include flexColumn();
     gap: 2.8em;
     margin-top: 1.3em;
+    font-weight: 400;
 
     a {
       @include flex();
       @include alignCenter();
       position: relative;
       gap: 1.2em;
+      text-decoration: none;
+      color: rgb(247, 244, 244);
 
       &::after {
         content: "";
@@ -40,7 +43,8 @@
         transition: width 0.2s ease-in;
       }
 
-      span {
+      p {
+       
         font-size: 1.4em;
       }
     }

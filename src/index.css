@@ -1,22 +1,40 @@
+:root {
+  --background-dark: #001514;
+  --background-light: rgb(247, 244, 244);
+  --text-dark: rgb(247, 244, 244);
+  --text-light: #001514;
+}
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
-  background-color: #001514;
-  color: rgb(247, 244, 244);
   object-fit: cover;
-
 }
+body {
+  cursor: url("/public/cursor.png"), auto;
 
-a {
-  text-decoration: none;
+ 
 }
 
 #home-content {
   display: grid;
   grid-template-columns: 500px 1fr;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
+#home-content.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+#home-content.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
 
 h3 {
   text-decoration: underline;
@@ -24,12 +42,14 @@ h3 {
 }
 
 .input-normal {
-  border: 3px solid;
+  border: 3px solid rgb(247, 244, 244);
   border-radius: 12px;
   padding: 1em;
   width: 40%;
+  color: rgb(247, 244, 244);
   margin: 0 auto;
   font-size: large;
+  background-color: #001514;
 }
 
 footer {
@@ -57,8 +77,12 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #001514;
 }
 
-body {
-  cursor: url('/public/cursor.png'), auto;
+
+@media screen and (min-width: 1597px) {
+  h3 {
+    font-size: 1.5em;
+    font-weight:500;
+  }
 }
 
 /*Font Nocifer */
