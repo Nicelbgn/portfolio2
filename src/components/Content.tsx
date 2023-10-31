@@ -51,7 +51,9 @@ export default function Content() {
             <SkillsFront />
           </div>
           <div id="front">
-            <h4>BACK-END :</h4>
+            <motion.h4 initial="hidden" animate="visible" variants={anime}>
+              BACK-END :
+            </motion.h4>
             <SkillsBack />
           </div>
         </div>

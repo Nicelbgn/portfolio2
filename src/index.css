@@ -1,3 +1,11 @@
+:root {
+  --background-dark: #001514;
+  --background-light: rgb(247, 244, 244);
+  --text-dark: rgb(247, 244, 244);
+  --text-light: #001514;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -7,27 +15,26 @@
 }
 body {
   cursor: url("/public/cursor.png"), auto;
-  background-color: #001514;
-  color: rgb(247, 244, 244);
+
  
 }
-
-.dark-mode {
-  background-color: #001514;
-  color: rgb(247, 244, 244);
-}
-
-.light-mode {
-  background-color:rgb(247, 244, 244) ;
-  color: #001514;
-}
-
-
 
 #home-content {
   display: grid;
   grid-template-columns: 500px 1fr;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
+#home-content.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+#home-content.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
 
 h3 {
   text-decoration: underline;
