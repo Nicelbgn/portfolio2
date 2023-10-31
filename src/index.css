@@ -8,6 +8,17 @@
   object-fit: cover;
 }
 
+.dark-mode {
+  background-color: #001514;
+  color: rgb(247, 244, 244);
+}
+
+.light-mode {
+  background-color:rgb(247, 244, 244) ;
+  color: #001514;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -58,11 +69,12 @@ body::-webkit-scrollbar-thumb {
 
 body {
   cursor: url("/public/cursor.png"), auto;
+  background-color: red;
 }
 @media screen and (min-width: 1597px) {
   h3 {
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight:500;
   }
 }
 

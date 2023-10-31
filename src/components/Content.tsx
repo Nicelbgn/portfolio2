@@ -6,6 +6,7 @@ import Projets from "./Projets";
 import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
 import { motion } from "framer-motion";
+
 export default function Content() {
   const anime = {
     hidden: { opacity: 0 },
@@ -17,6 +18,7 @@ export default function Content() {
       },
     },
   };
+
   return (
     <section>
       <div id="content">
