@@ -13,7 +13,7 @@ export default function Projets() {
       id: 2,
       name: "/clone_spotify.png",
       valeur: "CLONE SPOTIFY",
-      to: "https://github.com/GalsenBoy/clone-spotify_react_ts",
+      to: "https://clone-spotify-react-ts.vercel.app/",
     },
     {
       id: 3,
