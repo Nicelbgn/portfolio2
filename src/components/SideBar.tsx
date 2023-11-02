@@ -1,29 +1,9 @@
-import { NavLink } from "react-router-dom";
 import "../css/sideBar.scss";
 import { motion } from "framer-motion";
 import { generateAnimation } from "../utils/animations";
+import Nav from "./Nav";
+import Icones from "./Icones";
 export default function SideBar() {
-  const navs = [
-    { img: "/about.png", text: "A propos" },
-    { img: "/skills.png", text: "Compétences" },
-    { img: "/projects.png", text: "Projets" },
-    { img: "/contact.png", text: "Me contacter" },
-  ];
-
-  const icons = [
-    {
-      to: " https://www.linkedin.com/in/bilaly-cissokho-473400278?originalSubdomain=fr",
-      src: "/linkedin.png",
-    },
-    {
-      to: " https://github.com/GalsenBoy?tab=repositories",
-      src: "/git.png",
-    },
-    {
-      to: "https://cvbilaly.netlify.app/",
-      src: "/cv.png",
-    },
-  ];
 
   const animeAvatar = {
     hidden: { opacity: 0 },
@@ -53,11 +33,7 @@ export default function SideBar() {
           variants={generateAnimation(0.5, "x")}
           id="nav"
         >
-          {navs.map((nav) => (
-            <NavLink to={nav.text}>
-              <span>{nav.text}</span> <img src={nav.img} alt={nav.text} />
-            </NavLink>
-          ))}
+          <Nav />
         </motion.div>
         <motion.div
           initial="hidden"
@@ -67,11 +43,7 @@ export default function SideBar() {
         >
           <h3>MES RESEAUX :</h3>
           <div id="reseaux-items">
-            {icons.map((icon) => (
-              <NavLink to={icon.to}>
-                <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} src={icon.src} alt="" />
-              </NavLink>
-            ))}
+            <Icones />
           </div>
         </motion.div>
       </div>

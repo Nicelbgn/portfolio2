@@ -1,6 +1,7 @@
 import "../css/skills.scss";
 import { motion } from "framer-motion";
 import { animateSkills } from "../utils/animateSkills";
+import { animateRef } from "../utils/animateRef";
 export default function SkillsFront() {
   const fronts = [
     {
@@ -30,22 +31,12 @@ export default function SkillsFront() {
     },
   ];
 
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.9,
-        staggerChildren: 0.2,
-      },
-    },
-  };
+ 
 
   return (
     <motion.div
       className="container"
-      variants={container}
+      variants={animateRef(0.9,0.2)}
       initial="hidden"
       animate="visible"
       id="skills-card"
