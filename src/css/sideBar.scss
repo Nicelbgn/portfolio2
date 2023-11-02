@@ -6,6 +6,7 @@
   @include alignCenter();
   justify-content: space-around;
   border-right: 4px solid;
+  transition: width ease-in 0.3s;
 
   #avatar {
     img {
@@ -78,7 +79,8 @@
 }
 
 @media screen and (max-width: 1597px) {
- #side-bar-container{
-  width: 400px;
- }
+  #side-bar-container {
+    transition: width ease-in 0.3s;
+    width: 400px;
+  }
 }
