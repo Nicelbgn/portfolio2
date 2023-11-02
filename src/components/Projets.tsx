@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "../css/projets.scss";
-
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { animateSkills } from "../utils/animateSkills";
 export default function Projets() {
   const projects = [
     {
@@ -35,16 +37,34 @@ export default function Projets() {
     },
   ];
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
-    <div id="projet-content">
+    <motion.div  className="container"
+    variants={container}
+    initial="hidden"
+    animate={isInView ? "visible" : "hidden"} ref={ref} id="projet-content">
       {projects.map((project, index) => (
-        <div className="project" key={index}>
+        <motion.div   variants={animateSkills()} className="project" key={index}>
           <NavLink to={project.to}>
             <img src={project.name} alt={project.valeur} />
             <h4>{project.valeur}</h4>
           </NavLink>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
