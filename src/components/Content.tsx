@@ -1,5 +1,6 @@
 import "../css/content.scss";
 import { generateAnimation } from "../utils/animations";
+import Burger from "./Burger";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Projets from "./Projets";
@@ -21,6 +22,7 @@ export default function Content() {
 
   return (
     <section>
+      <Burger />
       <div id="content">
         <motion.div
           initial="hidden"
