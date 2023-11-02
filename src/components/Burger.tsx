@@ -4,9 +4,9 @@ export default function Burger() {
     <div>
       <label>
         <input type="checkbox" id="check" />
-        <span></span>
-        <span></span>
-        <span></span>
+        <span id="span1"></span>
+        <span  id="span2"></span>
+        <span  id="span3"></span>
       </label>
     </div>
   );
