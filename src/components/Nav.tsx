@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "../css/sideBar.scss";
 export default function Nav() {
   const navs = [
     { img: "/about.png", text: "A propos" },

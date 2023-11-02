@@ -44,7 +44,6 @@
       }
 
       span {
-       
         font-size: 1.4em;
       }
     }
@@ -72,9 +71,14 @@
   }
 }
 
-
 @media screen and (max-width: 1050px) {
   #side-bar-container {
     display: none;
   }
+}
+
+@media screen and (max-width: 1597px) {
+ #side-bar-container{
+  width: 400px;
+ }
 }

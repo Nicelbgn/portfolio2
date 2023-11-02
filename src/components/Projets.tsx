@@ -41,21 +41,9 @@ export default function Projets() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  // const container = {
-  //   hidden: { opacity: 1, scale: 0 },
-  //   visible: {
-  //     opacity: 1,
-  //     scale: 1,
-  //     transition: {
-  //       delayChildren: 0.3,
-  //       staggerChildren: 0.2,
-  //     },
-  //   },
-  // };
-
   return (
     <motion.div  className="container"
-    variants={animateRef()}
+    variants={animateRef(0.3,0.2)}
     initial="hidden"
     animate={isInView ? "visible" : "hidden"} ref={ref} id="projet-content">
       {projects.map((project, index) => (

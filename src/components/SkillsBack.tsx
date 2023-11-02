@@ -34,7 +34,7 @@ export default function SkillsBack() {
   return (
     <motion.div
       className="container"
-      variants={animateRef()}
+      variants={animateRef(0.3,0.2)}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       id="skills-card"

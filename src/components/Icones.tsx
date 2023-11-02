@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import "../css/sideBar.scss";
 export default function Icones() {
   const icons = [
     {
