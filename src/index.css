@@ -85,13 +85,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     font-weight: 500;
   }
-  #home-content{
+
+  #home-content {
     grid-template-columns: 400px 1fr;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  #home-content{
+  #home-content {
     display: block;
   }
 }
