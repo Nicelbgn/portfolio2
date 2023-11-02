@@ -3,6 +3,7 @@ import "../css/projets.scss";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { animateSkills } from "../utils/animateSkills";
+import { animateRef } from "../utils/animateRef";
 export default function Projets() {
   const projects = [
     {
@@ -40,21 +41,21 @@ export default function Projets() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
+  // const container = {
+  //   hidden: { opacity: 1, scale: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     scale: 1,
+  //     transition: {
+  //       delayChildren: 0.3,
+  //       staggerChildren: 0.2,
+  //     },
+  //   },
+  // };
 
   return (
     <motion.div  className="container"
-    variants={container}
+    variants={animateRef()}
     initial="hidden"
     animate={isInView ? "visible" : "hidden"} ref={ref} id="projet-content">
       {projects.map((project, index) => (
