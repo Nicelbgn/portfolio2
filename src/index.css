@@ -87,4 +87,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/*Font Nocifer */
+@media screen and (max-width: 1050px) {
+  #home-content{
+    display: block;
+  }
+}
