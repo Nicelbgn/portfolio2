@@ -6,11 +6,11 @@
   button,
   textarea {
     margin: 0 auto;
-    border: 3px solid rgb(247, 244, 244);
+    border: 3px solid var(--text-dark);
     border-radius: 12px;
     font-size: large;
     background-color: #001514;
-    color: rgb(247, 244, 244);
+    color: var(--text-dark);
     
   }
 
@@ -20,7 +20,7 @@
     transition: background-color ease-in-out 0.3s;
 
     &:hover {
-      background-color: rgb(247, 244, 244);
+      background-color: var(--text-dark);
       color: #001514;
       font-weight: 600;
     }
@@ -33,7 +33,7 @@
   }
 
   ::placeholder {
-    color: rgb(247, 244, 244);
+    color: var(--text-dark);
     opacity: 0.8;
   }
 }

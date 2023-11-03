@@ -1,5 +1,9 @@
-export default function NavResponsive (){
-    return(
-        <h1>Hiiii NavResponsive</h1>
-    )
+import Nav from "./Nav";
+import "../css/nav_resposnsive.scss"
+export default function NavResponsive() {
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }

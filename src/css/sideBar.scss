@@ -1,6 +1,6 @@
 #side-bar-container {
   position: fixed;
-  width: 500px;
+  width: 400px;
   height: 100vh;
   @include flexColumn();
   @include alignCenter();
@@ -28,7 +28,7 @@
       position: relative;
       gap: 1.2em;
       text-decoration: none;
-      color: rgb(247, 244, 244);
+      color: var(--text-dark);
 
       &::after {
         content: "";
@@ -78,9 +78,10 @@
   }
 }
 
-@media screen and (max-width: 1597px) {
+
+@media screen and (min-width: 1597px) {
   #side-bar-container {
+    width: 500px;
     transition: width ease-in 0.3s;
-    width: 400px;
   }
 }
