@@ -5,8 +5,6 @@ import Nav from "./Nav";
 import Icones from "./Icones";
 import { animeAvatar } from "../utils/animeAvatar";
 export default function SideBar() {
-
-
   return (
     <section>
       <div id="side-bar-container">

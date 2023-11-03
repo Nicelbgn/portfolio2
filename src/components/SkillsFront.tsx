@@ -4,11 +4,10 @@ import { animateRef } from "../utils/animateRef";
 import { animateSkills } from "../utils/animateSkills";
 import { fronts } from "../data/Front";
 export default function SkillsFront() {
- 
   return (
     <motion.div
       className="container"
-      variants={animateRef(0.9,0.2)}
+      variants={animateRef(0.9, 0.2)}
       initial="hidden"
       animate="visible"
       id="skills-card"

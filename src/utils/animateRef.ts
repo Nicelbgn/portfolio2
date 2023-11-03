@@ -11,11 +11,5 @@ export const animateRef = (deley:number,stagger:number) => {
     },
   };
 
-  //delay other 0.3
-  //staggerCh:.2
-
-
-
-  
   return animeRef;
 };

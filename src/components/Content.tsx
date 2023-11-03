@@ -10,7 +10,6 @@ import SkillsFront from "./SkillsFront";
 import { motion } from "framer-motion";
 
 export default function Content() {
- 
   return (
     <section>
       <Burger />
@@ -23,13 +22,14 @@ export default function Content() {
         >
           <h3>A PROPOS DE MOI :</h3>
           <p>
-            Je suis <h1> Bilaly Cissokho</h1>, développeur web à Cergy. Depuis avril 2023,
-            je travaille en alternance chez INFOCONSEIL à Neuilly-sur-Seine, où je crée et
-            maintiens des sites WordPress, y compris un site de vente en ligne,
-            Retrogems. Auparavant, j'ai effectué un stage en développement web
-            en full-remote avec une auto-entrepreneure (YESOUICAN). Actuellement, je poursuis un Bachelor en Conception
-            et Développement d'Applications à VIPSCHOOL. Vous pouvez consulter
-            mes travaux sur LinkedIn et GitHub.
+            Je suis <h1> Bilaly Cissokho</h1>, développeur web à Cergy. Depuis
+            avril 2023, je travaille en alternance chez INFOCONSEIL à
+            Neuilly-sur-Seine, où je crée et maintiens des sites WordPress, y
+            compris un site de vente en ligne, Retrogems. Auparavant, j'ai
+            effectué un stage en développement web en full-remote avec une
+            auto-entrepreneure (YESOUICAN). Actuellement, je poursuis un
+            Bachelor en Conception et Développement d'Applications à VIPSCHOOL.
+            Vous pouvez consulter mes travaux sur LinkedIn et GitHub.
           </p>
         </motion.div>
         <div id="skills">
