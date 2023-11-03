@@ -28,7 +28,7 @@
       position: relative;
       gap: 1.2em;
       text-decoration: none;
-      color: rgb(247, 244, 244);
+      color: var(--text-dark);
 
       &::after {
         content: "";

@@ -1,0 +1,30 @@
+.nav-responsive {
+  height: 100%;
+  background-color: var(--text-light);
+  width: 75%;
+  // display: none;
+  #nav {
+    height: 100%;
+    @include flexColumn();
+    justify-content: space-evenly;
+    a {
+      width: 75%;
+      text-decoration: none;
+      color: var(--text-dark);
+      @include flex();
+      // gap: 1.2em;
+      justify-content: space-around;
+      @include alignCenter();
+      span {
+        font-size: 1.15em;
+      }
+    }
+    img {
+      width: 25px;
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}

@@ -47,7 +47,8 @@ export default function Projets() {
     initial="hidden"
     animate={isInView ? "visible" : "hidden"} ref={ref} id="projet-content">
       {projects.map((project, index) => (
-        <motion.div   variants={animateSkills()} className="project" key={index}>
+        <motion.div  whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}  variants={animateSkills()} className="project" key={index}>
           <NavLink to={project.to}>
             <img src={project.name} alt={project.valeur} />
             <h4>{project.valeur}</h4>
