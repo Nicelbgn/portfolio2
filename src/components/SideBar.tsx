@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import Icones from "./Icones";
 export default function SideBar() {
 
+
   const animeAvatar = {
     hidden: { opacity: 0 },
     visible: {
@@ -25,7 +26,7 @@ export default function SideBar() {
           variants={animeAvatar}
           id="avatar"
         >
-          <img src="/avatar.jpg" alt="" />
+          <img src="/moi.jpg" alt="" />
         </motion.div>
         <motion.div
           initial="hidden"

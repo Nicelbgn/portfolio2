@@ -32,14 +32,13 @@ export default function Content() {
         >
           <h3>A PROPOS DE MOI :</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis
-            justo cursus nulla dictum ultrices at accumsan sapien. Aenean
-            viverra finibus ex, quis placerat felis egestas eget. Aliquam erat
-            volutpat. Suspendisse id ornare sapien, sed venenatis eros.
-            Vestibulum imperdiet tortor quis risus suscipit pulvinar id ut
-            metus. Suspendisse eu neque cursus, malesuada neque quis, fermentum
-            leo. Praesent consectetur, justo at pharetra tempus, neque metus
-            pharetra est, in vulputate tellus neque at ex.
+            Je suis <h1> Bilaly Cissokho</h1>, développeur web à Cergy. Depuis avril 2023,
+            je travaille en alternance chez INFOCONSEIL à Neuilly-sur-Seine, où je crée et
+            maintiens des sites WordPress, y compris un site de vente en ligne,
+            Retrogems. Auparavant, j'ai effectué un stage en développement web
+            en full-remote avec une auto-entrepreneure (YESOUICAN). Actuellement, je poursuis un Bachelor en Conception
+            et Développement d'Applications à VIPSCHOOL. Vous pouvez consulter
+            mes travaux sur LinkedIn et GitHub.
           </p>
         </motion.div>
         <div id="skills">
