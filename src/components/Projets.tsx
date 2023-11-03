@@ -6,8 +6,6 @@ import { animateSkills } from "../utils/animateSkills";
 import { animateRef } from "../utils/animateRef";
 import { projects } from "../data/ProjectData";
 export default function Projets() {
-
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
