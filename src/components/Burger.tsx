@@ -3,12 +3,15 @@ import { motion } from "framer-motion";
 import { generateAnimation } from "../utils/animations";
 import NavResponsive from "./NavResponsive";
 import { useState } from "react";
+import { Divide as Hamburger } from 'hamburger-react'
 export default function Burger() {
   const [cliqued, setCliqued] = useState<boolean>(false);
+  const [isOpen, setOpen] = useState<boolean>(false)
 
   const handleClick = () => {
     setCliqued(!cliqued);
   };
+
   return (
     <motion.div
       initial="hidden"
@@ -17,10 +20,7 @@ export default function Burger() {
       id="burger-content"
     >
       <div id="burger" onClick={handleClick}>
-        <input type="checkbox" id="check" />
-        <span id="span1"></span>
-        <span id="span2"></span>
-        <span id="span3"></span>
+        <Hamburger toggled={isOpen} toggle={setOpen} direction="right" rounded/>
       </div>
       <div className={!cliqued ? "hidden" : "nav-responsive"}>
         {" "}
