@@ -1,5 +1,6 @@
 import "../css/content.scss";
 import { generateAnimation } from "../utils/animations";
+import { anime } from "../utils/anime";
 import Burger from "./Burger";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -9,17 +10,7 @@ import SkillsFront from "./SkillsFront";
 import { motion } from "framer-motion";
 
 export default function Content() {
-  const anime = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.4,
-        type: "spring",
-      },
-    },
-  };
-
+ 
   return (
     <section>
       <Burger />

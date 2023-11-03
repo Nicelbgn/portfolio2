@@ -3,19 +3,9 @@ import { motion } from "framer-motion";
 import { generateAnimation } from "../utils/animations";
 import Nav from "./Nav";
 import Icones from "./Icones";
+import { animeAvatar } from "../utils/animeAvatar";
 export default function SideBar() {
 
-
-  const animeAvatar = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 1.4,
-        type: "spring",
-      },
-    },
-  };
 
   return (
     <section>
