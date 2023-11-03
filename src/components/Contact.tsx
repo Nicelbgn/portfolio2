@@ -3,22 +3,10 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import "../css/contact.scss";
 import { motion } from "framer-motion";
+import { inputFields } from "../data/InputFields";
 
 export default function Contact() {
-  const inputFields = [
-    {
-      type: "text",
-      placeholder: "Votre nom complet",
-      _class: "input-normal",
-      Name: "user_name",
-    },
-    {
-      type: "text",
-      placeholder: "Votre adresse email",
-      _class: "input-normal",
-      Name: "user_email",
-    },
-  ];
+
 
   const form = useRef<HTMLFormElement>(null);
 
