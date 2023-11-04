@@ -2,8 +2,8 @@ import "../css/sideBar.scss";
 import { motion } from "framer-motion";
 import { generateAnimation } from "../utils/animations";
 import Nav from "./Nav";
-import Icones from "./Icones";
 import { animeAvatar } from "../utils/animeAvatar";
+import SocialMedia from "./SocialMedia";
 export default function SideBar() {
   return (
     <section>
@@ -32,7 +32,7 @@ export default function SideBar() {
         >
           <h3>MES RESEAUX :</h3>
           <div id="reseaux-items">
-            <Icones />
+            <SocialMedia />
           </div>
         </motion.div>
       </div>
