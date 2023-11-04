@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   gap: 1.2em;
   justify-content: center;
-  a{
+
+  a {
     text-decoration: none;
     color: var(--text-dark);
   }
@@ -30,5 +31,13 @@
 
   h4 {
     margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #projet-content {
+    .project {
+      width: 200px;
+    }
   }
 }

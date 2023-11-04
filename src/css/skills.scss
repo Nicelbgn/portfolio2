@@ -24,3 +24,12 @@
     }
   }
 }
+
+@media screen and (max-width: 650px) {
+  #skills-card {
+    #skills-card-display {
+      width: 150px;
+      height: 130px;
+    }
+  }
+}
