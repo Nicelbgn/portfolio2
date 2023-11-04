@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { icons } from "../data/IconesData";
-export default function Icones() {
+type socialProps = {
+  socialItems?: string;
+};
+export default function SocialMedia({ socialItems }: socialProps) {
   return (
-    <div id="reseaux-items">
+    <div id="reseaux-items" className={socialItems}>
       {icons.map((icon) => (
         <NavLink to={icon.to}>
           <motion.img

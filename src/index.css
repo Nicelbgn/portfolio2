@@ -105,4 +105,8 @@ body::-webkit-scrollbar-thumb {
   .input-normal {
     width: 80%;
   }
+
+  footer h2 {
+    font-size: 1em;
+  }
 }
