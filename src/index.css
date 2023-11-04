@@ -13,9 +13,11 @@
   font-family: "Roboto";
   object-fit: cover;
 }
+
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 body {
   cursor: url("/public/cursor.png"), auto;
 
@@ -49,7 +51,7 @@ h3 {
   border: 3px solid rgb(247, 244, 244);
   border-radius: 12px;
   padding: 1em;
-  width: 40%;
+  width: 60%;
   color: rgb(247, 244, 244);
   margin: 0 auto;
   font-size: large;
@@ -96,5 +98,11 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 1050px) {
   #home-content {
     display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .input-normal {
+    width: 80%;
   }
 }

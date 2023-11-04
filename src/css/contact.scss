@@ -11,7 +11,7 @@
     font-size: large;
     background-color: #001514;
     color: var(--text-dark);
-    
+
   }
 
   button {
@@ -29,7 +29,7 @@
   textarea {
     padding: 0.5em;
     resize: none;
-    width: 40%;
+    width: 60%;
   }
 
   ::placeholder {
@@ -40,8 +40,18 @@
 
 @media screen and (min-width: 1597px) {
   #form-container {
-    .input-normal,textarea {
+
+    .input-normal,
+    textarea {
       width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #form-container {
+    textarea {
+      width: 80%;
     }
   }
 }
