@@ -5,7 +5,8 @@ export default function Nav() {
     <div id="nav">
       {navs.map((nav) => (
         <NavLink onClick={nav.anchor} to={""}>
-          <span>{nav.text}</span> <img src={nav.img} alt={nav.text} />
+          <img src={nav.img} alt={nav.text} />
+          <span>{nav.text}</span>
         </NavLink>
       ))}
     </div>

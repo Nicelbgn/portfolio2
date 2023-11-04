@@ -2,29 +2,33 @@
   height: 100%;
   background-color: var(--text-light);
   width: 75%;
-  
+
   #nav {
     height: 100%;
     @include flexColumn();
     justify-content: space-evenly;
+
     a {
       width: 75%;
       text-decoration: none;
       color: var(--text-dark);
       @include flex();
-      justify-content: space-around;
       @include alignCenter();
+      gap: 1.2em;
+      padding-left: 1.2em;
+
       span {
         font-size: 1.15em;
       }
     }
+
     img {
       width: 25px;
     }
   }
 }
 
-.hidden{
+.hidden {
   display: none;
-  
+
 }
