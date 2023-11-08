@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function Content() {
   return (
-    <section>
+    <section style={{position:"relative"}}>
       <Burger />
       <div id="content">
         <motion.div
