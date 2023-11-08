@@ -13,6 +13,7 @@ export default function Burger() {
   };
 
   return (
+    <>
     <motion.div
       initial="hidden"
       animate="visible"
@@ -31,6 +32,6 @@ export default function Burger() {
         {" "}
         <NavResponsive />
       </div>
-    </motion.div>
+    </motion.div></>
   );
 }
