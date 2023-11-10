@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     name: "/capcv.png",
     valeur: "CURRICULUM VITAE",
-    to: "https://cvbilaly.netlify.app/",
+    to: "https://bilaly.vercel.app/",
   },
   {
     id: 2,
