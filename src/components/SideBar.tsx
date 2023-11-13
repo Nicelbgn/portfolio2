@@ -14,7 +14,7 @@ export default function SideBar() {
           variants={animeAvatar}
           id="avatar"
         >
-          <img src="/moi.png" alt="" />
+          <img src="/moi.PNG" alt="" />
         </motion.div>
         <motion.div
           initial="hidden"
