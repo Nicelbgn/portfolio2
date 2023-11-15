@@ -4,12 +4,12 @@ export const backs = [
     valeur: "Node js",
   },
   {
-    img: "/express.png",
-    valeur: "Express js",
+    img: "/nest.svg",
+    valeur: "Nest js",
   },
   {
-    img: "/prisma.png",
-    valeur: "Prisma ORM",
+    img: "/type.png",
+    valeur: "Type ORM",
   },
   {
     img: "/sql.png",
