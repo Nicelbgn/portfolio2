@@ -20,7 +20,6 @@ export default function Content() {
           variants={generateAnimation(0.3, "y")}
           id="about"
         >
-          <h3>A PROPOS DE MOI :</h3>
           <p>
             Je suis <h1> Bilaly Cissokho</h1>, développeur web à Cergy. Depuis
             avril 2023, je travaille en alternance chez INFOCONSEIL à
