@@ -1,27 +1,27 @@
 export const navs = [
   {
-    img: "/about.png",
+    img: "/about.webp",
     text: "A propos",
     anchor: () => {
       window.location.href = "#about";
     },
   },
   {
-    img: "/skills.png",
+    img: "/skills.webp",
     text: "Compétences",
     anchor: () => {
       window.location.href = "#skills";
     },
   },
   {
-    img: "/projects.png",
+    img: "/projects.webp",
     text: "Projets",
     anchor: () => {
       window.location.href = "#my-projects";
     },
   },
   {
-    img: "/contact.png",
+    img: "/contact.webp",
     text: "Me contacter",
     anchor: () => {
       window.location.href = "#contact";

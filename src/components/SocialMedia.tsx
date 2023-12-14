@@ -13,7 +13,7 @@ export default function SocialMedia({ socialItems }: socialProps) {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             src={icon.src}
-            alt=""
+            alt={icon.alt}
           />
         </NavLink>
       ))}

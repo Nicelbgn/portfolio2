@@ -1,22 +1,27 @@
 export const backs = [
   {
-    img: "/node.png",
+    img: "/node.webp",
     valeur: "Node js",
+    alt: "node"
   },
   {
     img: "/nest.svg",
     valeur: "Nest js",
+    alt: "nest"
   },
   {
-    img: "/type.png",
+    img: "/type.webp",
     valeur: "Type ORM",
+    alt: "typeOrm"
   },
   {
-    img: "/sql.png",
+    img: "/sql.webp",
     valeur: "Sql",
+    alt: "sql"
   },
   {
-    img: "/mongo.png",
+    img: "/mongo.webp",
     valeur: "Mongo Db",
+    alt: "mongo_db"
   },
 ];

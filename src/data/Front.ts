@@ -1,27 +1,33 @@
 export const fronts = [
   {
-    img: "/js.jpg",
+    img: "/js.webp",
     valeur: "JavaScript",
+    alt: "javaScript"
   },
   {
-    img: "/next.png",
+    img: "/next.webp",
     valeur: "Next js",
+    alt: "next"
   },
   {
-    img: "/react.png",
+    img: "/react.webp",
     valeur: "React js",
+    alt: "react"
   },
 
   {
-    img: "/ts.png",
+    img: "/ts.webp",
     valeur: "TypeScript",
+    alt: "typeScript"
   },
   {
-    img: "/scss.png",
+    img: "/scss.webp",
     valeur: "Scss",
+    alt: "sass"
   },
   {
-    img: "/tailwind.png",
+    img: "/tailwind.webp",
     valeur: "Tailwind css",
+    alt: "tailwind"
   },
 ];
