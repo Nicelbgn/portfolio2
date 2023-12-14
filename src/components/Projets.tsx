@@ -27,7 +27,7 @@ export default function Projets() {
           key={index}
         >
           <NavLink to={project.to}>
-            <img src={project.name} alt={project.valeur} />
+            <img src={project.name} alt={project.alt} />
             <h4>{project.valeur}</h4>
           </NavLink>
         </motion.div>
