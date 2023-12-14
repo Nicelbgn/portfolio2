@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function Content() {
   return (
-    <section style={{position:"relative"}}>
+    <section style={{ position: "relative" }}>
       <Burger />
       <div id="content">
         <motion.div
@@ -34,9 +34,9 @@ export default function Content() {
           </p>
         </motion.div>
         <div id="skills">
-          <motion.h3 initial="hidden" animate="visible" variants={anime}>
+          <motion.h2 initial="hidden" animate="visible" variants={anime}>
             MES COMPETENCES :
-          </motion.h3>
+          </motion.h2>
           <div id="front">
             <motion.h4 initial="hidden" animate="visible" variants={anime}>
               FRONT-END :
