@@ -18,7 +18,7 @@ export default function SkillsFront() {
           variants={animateSkills}
           id="skills-card-display"
         >
-          <img src={front.img} alt="" />
+          <img src={front.img} alt={front.alt} />
           <p>{front.valeur}</p>
         </motion.div>
       ))}

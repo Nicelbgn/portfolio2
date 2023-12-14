@@ -25,7 +25,7 @@ export default function SkillsBack() {
           id="skills-card-display"
           key={index}
         >
-          <img src={back.img} alt="" />
+          <img src={back.img} alt={back.alt} />
           <p>{back.valeur}</p>
         </motion.div>
       ))}
