@@ -67,6 +67,8 @@ footer h2 {
   text-align: center;
   word-spacing: 2px;
   font-weight: 500;
+  font-size: 1.3em;
+
 }
 
 body::-webkit-scrollbar {
