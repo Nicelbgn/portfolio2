@@ -1,6 +1,6 @@
 export const backs = [
   {
-    img: "/node.png",
+    img: "/node.webp",
     valeur: "Node js",
   },
   {
@@ -8,15 +8,15 @@ export const backs = [
     valeur: "Nest js",
   },
   {
-    img: "/type.png",
+    img: "/type.webp",
     valeur: "Type ORM",
   },
   {
-    img: "/sql.png",
+    img: "/sql.webp",
     valeur: "Sql",
   },
   {
-    img: "/mongo.png",
+    img: "/mongo.webp",
     valeur: "Mongo Db",
   },
 ];
