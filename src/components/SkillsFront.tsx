@@ -12,8 +12,9 @@ export default function SkillsFront() {
       animate="visible"
       id="skills-card"
     >
-      {fronts.map((front) => (
+      {fronts.map((front, key) => (
         <motion.div
+          key={key}
           className="item"
           variants={animateSkills}
           id="skills-card-display"

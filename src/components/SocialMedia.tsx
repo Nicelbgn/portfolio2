@@ -7,8 +7,8 @@ type socialProps = {
 export default function SocialMedia({ socialItems }: socialProps) {
   return (
     <div id="reseaux-items" className={socialItems}>
-      {icons.map((icon) => (
-        <NavLink to={icon.to}>
+      {icons.map((icon, key) => (
+        <NavLink key={key} to={icon.to}>
           <motion.img
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
