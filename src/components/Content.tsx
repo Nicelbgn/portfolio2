@@ -20,9 +20,9 @@ export default function Content() {
           variants={generateAnimation(0.3, "y")}
           id="about"
         >
-          <p>
-            Je suis <h1> Bilaly Cissokho</h1>, développeur web à Cergy. Depuis
-            avril 2023, je travaille en alternance chez INFOCONSEIL à
+          <h1>
+            Je suis <strong> Bilaly Cissokho</strong>, développeur web à Cergy.
+            Depuis avril 2023, je travaille en alternance chez INFOCONSEIL à
             Neuilly-sur-Seine, où je crée et maintiens des sites WordPress, y
             compris un site de vente en ligne, Retrogems fait en React et
             Express js. Auparavant, j'ai effectué un stage en développement web
@@ -30,7 +30,7 @@ export default function Content() {
             Actuellement, je poursuis un Bachelor en Conception et Développement
             d'Applications à VIPSCHOOL. Vous pouvez consulter mes travaux sur
             LinkedIn et GitHub.
-          </p>
+          </h1>
         </motion.div>
         <div id="skills">
           <motion.h2 initial="hidden" animate="visible" variants={anime}>

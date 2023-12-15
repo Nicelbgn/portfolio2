@@ -5,6 +5,7 @@ export const navs = [
     anchor: () => {
       window.location.href = "#about";
     },
+    alt: "about"
   },
   {
     img: "/skills.webp",
@@ -12,6 +13,7 @@ export const navs = [
     anchor: () => {
       window.location.href = "#skills";
     },
+    alt: "competences"
   },
   {
     img: "/projects.webp",
@@ -19,6 +21,7 @@ export const navs = [
     anchor: () => {
       window.location.href = "#my-projects";
     },
+    alt: "projets"
   },
   {
     img: "/contact.webp",
@@ -26,5 +29,6 @@ export const navs = [
     anchor: () => {
       window.location.href = "#contact";
     },
+    alt: "contact"
   },
 ];
