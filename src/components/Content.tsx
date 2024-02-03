@@ -9,6 +9,7 @@ import SkillsBack from "./SkillsBack";
 import SkillsFront from "./SkillsFront";
 import { motion } from "framer-motion";
 
+
 export default function Content() {
   return (
     <section style={{ position: "relative" }}>
@@ -19,16 +20,11 @@ export default function Content() {
           animate="visible"
           variants={generateAnimation(0.3, "y")}
           id="about"
-        >
+        > 
           <h1>
-            Je suis <strong> Bilaly Cissokho</strong>, développeur web à Cergy.
-            Depuis avril 2023, je travaille en alternance chez INFOCONSEIL à
-            Neuilly-sur-Seine, où je crée et maintiens des sites WordPress, y
-            compris un site de vente en ligne, Retrogems fait en React et
-            Express js. Auparavant, j'ai effectué un stage en développement web
-            en full-remote avec une auto-entrepreneure (YESOUICAN).
-            Actuellement, je poursuis un Bachelor en Conception et Développement
-            d'Applications à VIPSCHOOL. Vous pouvez consulter mes travaux sur
+            Je suis <strong> Nice Vrayance LEMBENGOUNI</strong>, développeur junior full-stack.
+            Ma première immersion dans le domaine de l'informatique a eu lieu en Afrique du Sud, où j'ai acquis les bases de ce secteur passionnant, constamment en évolution rapide. Mon initiation en tant que technicien informatique a débuté pendant mes stages à la Vaal University of Technology. Actuellement, je continue d'explorer de nouvelles facettes de l'informatique, en me concentrant notamment sur le développement web. J'ai eu l'occasion de mettre en pratique mes compétences à travers la réalisation de divers projets scolaires impliquant des techniques telles que Docker, les API, l'utilisation de Figma, ainsi que la création de bases de données avec des outils comme Postgresql, Mariadb ou Redis. Plutôt que de simplement énumérer mes compétences, je préfère les démontrer à travers des projets concrets.
+Ce qui me distingue principalement, c'est ma capacité naturelle à m'adapter rapidement à de nouveaux contextes et à assimiler de nouvelles connaissances et technologies. Ayant une attitude ouverte, je donne une grande valeur à la communication et au partage des connaissances.. Vous pouvez consulter mes travaux sur
             LinkedIn et GitHub.
           </h1>
         </motion.div>

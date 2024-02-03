@@ -1,17 +1,13 @@
 export const icons = [
   {
-    to: "https://www.linkedin.com/in/bilaly-cissokho-473400278?originalSubdomain=fr",
+    to: "https://www.linkedin.com/in/nice-lembengouni-b8212b2a1/",
     src: "/linkedin.webp",
-    alt: "linkedin"
+    alt: "linkedin",
   },
   {
-    to: "https://github.com/GalsenBoy?tab=repositories",
+    to: "https://github.com/dashboard",
     src: "/git.webp",
     alt: "github"
   },
-  {
-    to: "https://bilaly.vercel.app/",
-    src: "/cv.webp",
-    alt: "cv"
-  },
+  
 ];

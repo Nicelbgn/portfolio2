@@ -9,6 +9,12 @@ export const fronts = [
     valeur: "Next js",
     alt: "next"
   },
+  
+  {
+    img: "/astro.webp",
+    valeur: "Astro",
+    alt: "astro"
+  },
   {
     img: "/react.webp",
     valeur: "React js",
@@ -26,8 +32,13 @@ export const fronts = [
     alt: "sass"
   },
   {
-    img: "/tailwind.webp",
-    valeur: "Tailwind css",
-    alt: "tailwind"
+    img: "/Html.webp",
+    valeur: "Html",
+    alt: "html"
+  },
+  {
+    img: "/css.webp",
+    valeur: "Css",
+    alt: "css"
   },
 ];

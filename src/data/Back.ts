@@ -10,18 +10,24 @@ export const backs = [
     alt: "nest"
   },
   {
-    img: "/type.webp",
-    valeur: "Type ORM",
-    alt: "typeOrm"
+    img: "/python.webp",
+    valeur: "Python",
+    alt: "python"
   },
+  {
+    img: "/ts.webp",
+    valeur: "TypeScript",
+    alt: "typeScript"
+  },
+  
   {
     img: "/sql.webp",
     valeur: "Sql",
     alt: "sql"
   },
   {
-    img: "/mongo.webp",
-    valeur: "Mongo Db",
-    alt: "mongo_db"
+    img: "/mariadb.webp",
+    valeur: "MariaDb",
+    alt: "mariadb"
   },
 ];

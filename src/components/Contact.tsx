@@ -49,7 +49,7 @@ export default function Contact() {
             rows={10}
           ></textarea>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            ENVOYER
+            ENVOYÉ
           </motion.button>
         </div>
       </form>
